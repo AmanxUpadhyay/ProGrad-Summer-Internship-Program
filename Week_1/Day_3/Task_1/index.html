@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess The Number | Games</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome, Let's Play Guess The Number</h1>
+
+        <form action="">
+            If you guess it right, you will get a price.
+            <input type="number" name="UserInput" id="UserInput">
+            <button type="submit" value="Check" id="Check" onclick="CheckNumber()"> Check </button>
+        </form>
+        <p id="Result"></>
+
+    </div>
+
+    <script type="text/javascript">
+        var y = Math.floor(Math.random() * 10 + 1);
+        // var y = 10;
+        var guess = 1;
+
+        document.getElementById("Check").onclick = function(){
+            var x = document.getElementById("UserInput").value;
+            if(x == y){
+                document.getElementById("Result").innerHTML = "Congratulations! You Guessed It Right in" + guess;
+            }
+            else if(x > y){
+                guess++;
+                document.getElementById("Result").innerHTML = "Sorry Number is Smaller";
+            }
+            else{
+                guess++;
+                document.getElementById("Result").innerHTML = "Sorry Number is Greater";
+            }
+        }
+    </script>
+</body>
+</html>
