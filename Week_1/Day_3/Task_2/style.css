@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    background-color: #0F2027;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+}
+
+table tr th input {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: dashed;
+    font-size: larger;
+    text-align: center;
+}
+
+button {
+    outline: none;
+    padding: 10px 22px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+table tr th{
+    padding-top: 10px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: dashed;
+    font-size: larger;
+    text-align: center;
+}
